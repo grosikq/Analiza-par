@@ -1,25 +1,10 @@
 {
   "expo": {
-    "name": "analiza-par",
-    "slug": "snack-65e0b87b-8963-49f2-9da9-657dcf77c736",
+    "name": "Analiza Par",
+    "slug": "analiza-par",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "package": "com.grosikq.analizapar",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      "package": "com.grosikq.analizapar"
     },
     "extra": {
       "eas": {
