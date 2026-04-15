@@ -142,6 +142,22 @@ export default function App() {
     ]);
   }
 
+  // NOWA FUNKCJA: Potwierdzenie usunięcia analizy
+  function confirmDelete(id) {
+    Alert.alert(
+      'Usuń analizę',
+      'Czy na pewno chcesz trwale usunąć tę analizę? Tej operacji nie można cofnąć.',
+      [
+        { text: 'Anuluj', style: 'cancel' },
+        { 
+          text: 'Usuń', 
+          style: 'destructive', 
+          onPress: () => persist(sets.filter(s => s.id !== id)) 
+        },
+      ]
+    );
+  }
+
   function editAnswer(choice) {
     const updated = { ...cur, pairs: cur.pairs.map((p, i) => i === editIdx ? { ...p, answer: choice } : p) };
     syncCurrent(updated);
@@ -165,7 +181,9 @@ export default function App() {
               </TouchableOpacity>
               <View style={st.savedActions}>
                 <TouchableOpacity style={st.savedOpen} onPress={() => loadSet(sv.id)}><Text style={{ color: C.accent, fontWeight: '600' }}>Otwórz</Text></TouchableOpacity>
-                <TouchableOpacity style={st.savedDel} onPress={() => persist(sets.filter(s => s.id !== sv.id))}><Text style={{ color: C.danger, fontWeight: '600' }}>Usuń</Text></TouchableOpacity>
+                <TouchableOpacity style={st.savedDel} onPress={() => confirmDelete(sv.id)}>
+                  <Text style={{ color: C.danger, fontWeight: '600' }}>Usuń</Text>
+                </TouchableOpacity>
               </View>
             </Card>
           );
