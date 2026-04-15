@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Analiza Par",
-    "slug": "analiza-par",
+    "slug": "analiza-zmian",
     "version": "1.0.0",
     "android": {
       "package": "com.grosikq.analizapar"
