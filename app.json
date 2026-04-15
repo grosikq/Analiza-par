@@ -5,12 +5,15 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
     "android": {
       "package": "com.grosikq.analizapar"
     },
     "extra": {
       "eas": {
-        "projectId": "e0202a27-0346-4ef0-a6e3-79422793f825"
+        "projectId": "a69ca5e9-0c49-4548-85cd-c764481c77ea"
       }
     }
   }
