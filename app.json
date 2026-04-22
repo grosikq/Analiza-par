@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Analiza Par",
-    "slug": "analiza-par",
+    "name": "Analiza",
+    "slug": "analizaola",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
@@ -9,11 +9,11 @@
       "backgroundColor": "#ffffff"
     },
     "android": {
-      "package": "com.grosikq.analizapar"
+      "package": "com.grosikq.analizaola"
     },
     "extra": {
       "eas": {
-        "projectId": "e0202a27-0346-4ef0-a6e3-79422793f825"
+        "projectId": "591eb1cc-015f-4209-b729-89cb0ec9715f"
       }
     }
   }
